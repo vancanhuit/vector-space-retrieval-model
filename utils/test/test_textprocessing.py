@@ -1,5 +1,5 @@
 from utils import textprocessing
-'''This module contains unit tests for utilities module'''
+'''This module contains unit tests for text processing module'''
 
 
 class TestTextProcessing(object):
