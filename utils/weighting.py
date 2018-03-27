@@ -22,5 +22,5 @@ def inverse_document_frequency(term, corpus):
     pass
 
 
-def tf_idf(tf, idf):
+def weight(tf, idf):
     return tf * idf
