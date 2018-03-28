@@ -8,10 +8,12 @@ class TestWeighting(object):
         frequency_a = weighting.frequency('a', doc)
         frequency_b = weighting.frequency('b', doc)
         frequency_c = weighting.frequency('c', doc)
+        frequency_d = weighting.frequency('d', doc)
 
         assert frequency_a == 3
         assert frequency_b == 2
         assert frequency_c == 1
+        assert frequency_d == 0
 
     def test_document_frequency(self):
         doc1 = ['a', 'a', 'b']
