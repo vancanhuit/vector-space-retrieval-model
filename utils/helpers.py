@@ -1,6 +1,7 @@
 import os
 from collections import defaultdict
 import math
+''' Helper functions '''
 
 
 def get_stopwords(stopwords_file):

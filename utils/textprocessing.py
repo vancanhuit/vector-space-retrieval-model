@@ -1,6 +1,6 @@
-'''This module contains functions for processing text'''
 import re
 from nltk.stem.porter import PorterStemmer
+''' Text processing '''
 
 
 def remove_nonwords(text):

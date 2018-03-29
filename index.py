@@ -4,6 +4,8 @@ import pickle
 import math
 from collections import Counter
 from utils import textprocessing, helpers
+''' Index data '''
+
 
 resources_path = os.path.join(os.getcwd(), 'resources')
 data_path = os.path.join(os.getcwd(), 'data')
@@ -44,6 +46,7 @@ docs_file = os.path.join(data_path, 'docs.pickle')
 inverted_index_file = os.path.join(data_path, 'inverted_index.pickle')
 dictionary_file = os.path.join(data_path, 'dictionary.txt')
 
+# Serialize data
 with open(docs_file, 'wb') as f:
     pickle.dump(docs, f)
 
