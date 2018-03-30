@@ -42,6 +42,7 @@ for word, value in query.items():
         scores[index][1] += value * weight
 
 scores.sort(key=lambda doc: doc[1], reverse=True)
-print(scores)
+
+print('----- Results ------ ')
 for index, score in enumerate(scores):
     print('{}. {} - {}'.format(index + 1, docs[score[0]], score[1]))

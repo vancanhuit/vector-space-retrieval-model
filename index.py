@@ -6,6 +6,7 @@ from collections import Counter
 from utils import textprocessing, helpers
 ''' Index data '''
 
+print('Indexing....')
 
 resources_path = os.path.join(os.getcwd(), 'resources')
 data_path = os.path.join(os.getcwd(), 'data')
@@ -56,3 +57,5 @@ with open(inverted_index_file, 'wb') as f:
 with open(dictionary_file, 'w') as f:
     for word in idf.keys():
         f.write(word + '\n')
+
+print('Index done.')
