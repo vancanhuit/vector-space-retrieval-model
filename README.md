@@ -3,7 +3,13 @@
 ## Get started
 
 - Install [Python 3.5+](https://www.python.org/)
-- Install [NLTK 3](http://www.nltk.org/)
+- Install [NLTK 3](http://www.nltk.org/) package via `pip` command:
+
+```bash
+$ pip install nltk
+```
+
+## Usage
 
 Run `index.py` script to index documents stored in `resources/dataset` directory:
 
