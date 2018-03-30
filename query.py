@@ -35,6 +35,8 @@ query = Counter(query)
 for word, value in query.items():
     query[word] = inverted_index[word]['idf'] * (1 + math.log(value))
 
+helpers.normalize(query)
+
 scores = [[i, 0] for i in range(len(docs))]
 for word, value in query.items():
     for doc in inverted_index[word]['postings_list']:
