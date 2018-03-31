@@ -47,6 +47,6 @@ scores.sort(key=lambda doc: doc[1], reverse=True)
 
 print('----- Results ------ ')
 for index, score in enumerate(scores):
-    print('{}. {} - {}'.format(index + 1, docs[score[0]], score[1]))
-    if index > 10:
+    if score[1] == 0:
         break
+    print('{}. {} - {}'.format(index + 1, docs[score[0]], score[1]))
