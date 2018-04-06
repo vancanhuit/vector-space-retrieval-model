@@ -9,11 +9,7 @@ class TestTextProcessing(object):
 
         assert type(processed_text) is str
         assert len(processed_text) == 5
-        assert processed_text[0] == 'a'
-        assert processed_text[1] == "'"
-        assert processed_text[2] == 'b'
-        assert processed_text[3] == ' '
-        assert processed_text[4] == 'c'
+        assert processed_text == "a'b c"
 
     def test_remove_stopwords(self):
         text = 'there is some stopwords in the sentence'

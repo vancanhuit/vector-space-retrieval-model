@@ -19,8 +19,7 @@ with open(docs_file, 'rb') as f:
 with open(inverted_index_file, 'rb') as f:
     inverted_index = pickle.load(f)
 
-with open(stopwords_file, 'r') as f:
-    stopwords = set(f.read().split())
+stopwords = helpers.get_stopwords(stopwords_file)
 
 dictionary = set(inverted_index.keys())
 
