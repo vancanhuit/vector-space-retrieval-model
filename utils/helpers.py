@@ -4,12 +4,6 @@ import math
 ''' Helper functions '''
 
 
-def get_stopwords(stopwords_file):
-    with open(stopwords_file, mode='r') as f:
-        stopwords = set(f.read().split())
-    return stopwords
-
-
 def get_docs(dataset_path):
     docs = []
     for doc_file in os.listdir(dataset_path):
