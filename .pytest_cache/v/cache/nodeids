@@ -1,6 +1,0 @@
-[
-  "utils/test/test_textprocessing.py::TestTextProcessing::()::test_remove_nonwords",
-  "utils/test/test_textprocessing.py::TestTextProcessing::()::test_remove_stopwords",
-  "utils/test/test_textprocessing.py::TestTextProcessing::()::test_stem_words",
-  "utils/test/test_textprocessing.py::TestTextProcessing::()::test_preprocess_text"
-]
