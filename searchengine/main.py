@@ -31,6 +31,4 @@ def search(query, docs, inverted_index):
 
     scores.sort(key=lambda doc: doc[1], reverse=True)
     for index, score in enumerate(scores):
-        if score[1] == 0:
-            break
-        print('{}. {} - {}'.format(index + 1, docs[score[0]], score[1]))
+        yield index, score

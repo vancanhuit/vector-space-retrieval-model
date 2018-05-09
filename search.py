@@ -13,4 +13,10 @@ with open(inverted_index_file, mode='rb') as f:
     inverted_index = pickle.load(f)
 
 query = sys.argv[1]
-main.search(query, docs, inverted_index)
+scores = main.search(query, docs, inverted_index)
+
+print('Query: {}'.format(query))
+for index, score in scores:
+    if score[1] == 0:
+        break
+    print('{}. {} - {}'.format(index + 1, docs[score[0]], score[1]))
